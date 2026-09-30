@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología 1.° Año | Educación Secundaria - Salta</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Intuitive Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand / Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/30 text-white font-bold text-xl">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-lg tracking-tight block leading-tight">Tecnología 1.° Año</span>
+                        <span class="text-xs text-amber-400 font-medium">Ciclo Básico • Provincia de Salta</span>
+                    </div>
+                </div>
+                <!-- Navigation Links (Desktop) -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                    <a href="#inicio" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition text-slate-300 hover:text-white">Inicio</a>
+                    <a href="#eje1" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition text-slate-300 hover:text-white">Eje 1: ¿Qué es?</a>
+                    <a href="#eje2" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition text-slate-300 hover:text-white">Eje 2: Necesidades</a>
+                    <a href="#eje3" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition text-slate-300 hover:text-white">Eje 3: Productos</a>
+                    <a href="#eje4" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition text-slate-300 hover:text-white">Eje 4: Análisis</a>
+                    <a href="#eje5" class="px-3 py-2 rounded-lg hover:bg-slate-800 transition text-slate-300 hover:text-white">Eje 5: Salta</a>
+                    <a href="#autoevaluacion" class="px-3 py-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold transition shadow-sm">Autoevaluación</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-slate-300 hover:text-white p-2 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-4 space-y-1">
+            <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Inicio</a>
+            <a href="#eje1" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Eje 1: ¿Qué es?</a>
+            <a href="#eje2" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Eje 2: Necesidades</a>
+            <a href="#eje3" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Eje 3: Productos</a>
+            <a href="#eje4" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Eje 4: Análisis</a>
+            <a href="#eje5" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Eje 5: Salta</a>
+            <a href="#autoevaluacion" class="block px-3 py-2 rounded-md text-base font-medium bg-amber-500 text-slate-950 font-semibold">Autoevaluación</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Editable Institutional Header -->
+    <section id="inicio" class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950 text-white py-16 lg:py-24 border-b border-amber-500/20">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs sm:text-sm font-semibold mb-6">
+                <i class="fa-solid fa-map-location-dot"></i> Primer Trimestre • Enfoque Socio-Técnico y Situado
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
+                Cartilla Digital de <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Tecnología</span>
+            </h1>
+
+            <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Explorá cómo la actividad humana transforma nuestra provincia de <strong>Salta</strong>: desde los saberes ancestrales en los Valles y la Puna hasta las tecnologías de vanguardia en la agroindustria y la minería.
+            </p>
+
+            <!-- Interactive Institutional Header Box (Multi-School Compatible) -->
+            <div class="bg-slate-800/90 border border-slate-700/80 rounded-2xl p-5 max-w-2xl mx-auto shadow-xl text-left mb-8 backdrop-blur">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs uppercase tracking-wider text-amber-400 font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-school"></i> Membrete Institucional (Editable)
+                    </span>
+                    <span class="text-xs text-slate-400">Personalizá para tu colegio</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs text-slate-400 mb-1">Institución Educativa:</label>
+                        <input type="text" id="input-colegio" value="Colegio Secundario N.° 5000" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-400 mb-1">Curso y División / Alumno:</label>
+                        <input type="text" id="input-curso" value="1.° Año 1.° Div. • Turno Mañana" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#eje1" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-slate-950 font-bold transition shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                    Comenzar Recorrido <i class="fa-solid fa-rocket"></i>
+                </a>
+                <a href="#autoevaluacion" class="px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700 text-white font-semibold transition flex items-center gap-2">
+                    Ir a Autoevaluación <i class="fa-solid fa-clipboard-check text-amber-400"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- EJE 1 -->
+        <section id="eje1" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">Eje 1 • Semanas 3 a 5</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-lightbulb text-amber-500"></i> ¿Qué es la Tecnología?
+            </h2>
+
+            <!-- DUA Reading Support Box -->
+            <div class="bg-amber-50/60 border-l-4 border-amber-500 p-4 rounded-r-xl mb-6 text-sm sm:text-base text-slate-700 leading-relaxed">
+                <p class="font-semibold text-slate-900 mb-1"><i class="fa-solid fa-eye text-amber-600 mr-1"></i> Idea Clave Accesible:</p>
+                La tecnología no son solo celulares o computadoras. Es toda actividad humana para resolver problemas y mejorar nuestra vida diaria usando saberes y herramientas.
+            </div>
+
+            <div class="prose max-w-none text-slate-700 space-y-4 mb-8 text-sm sm:text-base">
+                <p>
+                    Cuando escuchamos la palabra "tecnología", lo primero que se nos viene a la cabeza es un teléfono celular último modelo, una notebook o una consola de videojuegos. Sin embargo, si pensamos así, nos estamos perdiendo la parte más importante de la historia humana.
+                </p>
+                <p>
+                    La <strong>Tecnología</strong> es la actividad humana orientada a resolver problemas y satisfacer necesidades mediante la creación, diseño y uso de productos, saberes y procesos. Desde el habitante originario que tallaba una piedra para cazar en el Chaco salteño, hasta el técnico que instala paneles solares en la Puna, todos hacen tecnología.
+                </p>
+            </div>
+
+            <!-- Context Box -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 mb-8">
+                <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2 text-sm sm:text-base">
+                    <i class="fa-solid fa-mountain-sun text-orange-600"></i> Contexto local en Salta:
+                </h4>
+                <p class="text-slate-700 text-sm sm:text-base">
+                    En nuestra provincia conviven tecnologías ancestrales (como los sistemas de andenes agrícolas en los Valles o los telares de las comunidades originarias) con tecnologías de punta (como la extracción de litio en la Puna o la agricultura de precisión en el Valle de Lerma). ¡Todas ellas son tecnologías!
+                </p>
+            </div>
+
+            <!-- Progressive Examples Section -->
+            <h3 class="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-layer-group text-amber-500"></i> Diferenciando Conceptos: Ciencia, Técnica y Tecnología
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <!-- Card 1: Ciencia -->
+                <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold mb-3 text-lg">
+                            <i class="fa-solid fa-atom"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1">Ciencia</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mb-4">Busca comprender y explicar el mundo natural y social mediante el conocimiento científico.</p>
+                    </div>
+                    <div class="bg-blue-50/70 p-3 rounded-xl border border-blue-100 text-xs text-blue-900">
+                        <strong>Ejemplo (Salta):</strong> Investigar por qué el estrés hídrico afecta el rendimiento de la vid en Cafayate.
+                    </div>
+                </div>
+
+                <!-- Card 2: Técnica -->
+                <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-3 text-lg">
+                            <i class="fa-solid fa-hammer"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1">Técnica</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mb-4">Procedimientos y habilidades prácticas para hacer algo de manera exitosa. El "saber hacer".</p>
+                    </div>
+                    <div class="bg-emerald-50/70 p-3 rounded-xl border border-emerald-100 text-xs text-emerald-900">
+                        <strong>Ejemplo (Salta):</strong> La técnica artesanal de tejido de lana de llama en Iruya.
+                    </div>
+                </div>
+
+                <!-- Card 3: Tecnología -->
+                <div class="bg-slate-50 border border-slate-200/90 rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold mb-3 text-lg">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900 mb-1">Tecnología</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mb-4">Integra técnica, ciencia y sociedad. Se pregunta el por qué, para quién y su impacto.</p>
+                    </div>
+                    <div class="bg-amber-50/70 p-3 rounded-xl border border-amber-100 text-xs text-amber-900">
+                        <strong>Ejemplo (Salta):</strong> Diseñar un sistema de riego solar automático para pequeños productores.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glossary Box -->
+            <div class="bg-slate-100 rounded-2xl p-5 border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-2">
+                <span class="font-bold uppercase tracking-wider text-slate-900 block text-xs mb-1">Glosario Técnico Integrado</span>
+                <p><strong>Saber hacer:</strong> Conjunto de habilidades prácticas transmitidas o aprendidas.</p>
+                <p><strong>Contexto socio-técnico:</strong> Entorno social, cultural y económico en el que una tecnología es creada y utilizada.</p>
+            </div>
+        </section>
+
+        <!-- EJE 2 -->
+        <section id="eje2" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-wider">Eje 2 • Semanas 6 a 8</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-heart-pulse text-orange-500"></i> Necesidades Humanas y Tecnología
+            </h2>
+
+            <div class="prose max-w-none text-slate-700 space-y-4 mb-6 text-sm sm:text-base">
+                <p>
+                    ¿Por qué inventamos cosas los seres humanos? La respuesta fundamental se encuentra en nuestras necesidades. Una <strong>necesidad</strong> es la sensación de carencia de algo unida al deseo de satisfacerla.
+                </p>
+            </div>
+
+            <!-- Two Columns for Needs -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- Primarias -->
+                <div class="bg-emerald-50/50 border border-emerald-200/80 rounded-2xl p-5">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Necesidades Primarias (Subsistencia)</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-700 mb-4">Indispensables para la supervivencia biológica y física. Si no se cubren, ponemos en riesgo la vida.</p>
+                    <div class="text-xs bg-white p-3 rounded-xl border border-emerald-100 text-emerald-900 space-y-1">
+                        <p class="font-semibold">Ejemplos en Salta:</p>
+                        <p>• <strong>Básico:</strong> Alimentarnos y beber agua segura.</p>
+                        <p>• <strong>Intermedio (Contexto):</strong> Abrigos de lana y viviendas de adobe bioclimático frente al frío de la Puna salteña.</p>
+                    </div>
+                </div>
+
+                <!-- Secundarias -->
+                <div class="bg-indigo-50/50 border border-indigo-200/80 rounded-2xl p-5">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="font-bold text-slate-900">Necesidades Secundarias (Bienestar)</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-700 mb-4">Fundamentales para vivir en sociedad, aprender, comunicarnos y mejorar la calidad de vida.</p>
+                    <div class="text-xs bg-white p-3 rounded-xl border border-indigo-100 text-indigo-900 space-y-1">
+                        <p class="font-semibold">Ejemplos en Salta:</p>
+                        <p>• <strong>Básico:</strong> Estudiar en la escuela secundaria.</p>
+                        <p>• <strong>Intermedio (Contexto):</strong> Usar colectivos interurbanos o transporte público para trasladarse en el área metropolitana de Salta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chain Flow -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 mb-8">
+                <h4 class="font-bold text-slate-900 mb-3 text-sm sm:text-base flex items-center gap-2">
+                    <i class="fa-solid fa-link text-amber-600"></i> La Cadena Tecnológica
+                </h4>
+                <div class="flex flex-col sm:flex-row items-center justify-between text-center gap-2 text-xs sm:text-sm font-medium text-slate-700 bg-white p-4 rounded-xl border border-slate-200">
+                    <span class="bg-amber-100 text-amber-900 px-3 py-1.5 rounded-lg w-full sm:w-auto">Necesidad Humana</span>
+                    <i class="fa-solid fa-arrow-right text-slate-400 hidden sm:block"></i>
+                    <i class="fa-solid fa-arrow-down text-slate-400 sm:hidden"></i>
+                    <span class="bg-orange-100 text-orange-900 px-3 py-1.5 rounded-lg w-full sm:w-auto">Problema Tecnológico</span>
+                    <i class="fa-solid fa-arrow-right text-slate-400 hidden sm:block"></i>
+                    <i class="fa-solid fa-arrow-down text-slate-400 sm:hidden"></i>
+                    <span class="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-lg w-full sm:w-auto">Solución (Producto)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EJE 3 -->
+        <section id="eje3" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">Eje 3 • Semanas 9 a 11</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-boxes-stacked text-emerald-500"></i> Productos Tecnológicos
+            </h2>
+
+            <p class="text-slate-700 text-sm sm:text-base mb-6">
+                Todo lo que el ser humano ha creado, fabricado u organizado para satisfacer necesidades es un <strong>producto tecnológico</strong>. Se clasifican en tres grandes categorías:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <!-- Bienes -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+                    <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold mb-3">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-1">1. Bienes Materiales</h4>
+                    <p class="text-xs text-slate-600 mb-3">Objetos físicos, tangibles. Resultado de transformar materias primas.</p>
+                    <div class="text-xs bg-white p-2.5 rounded-lg border border-slate-200 text-slate-700">
+                        <strong>Ej (Salta):</strong> Poncho salteño de lana, frasco de pimentón de Cachi.
+                    </div>
+                </div>
+
+                <!-- Servicios -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+                    <div class="w-9 h-9 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold mb-3">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-1">2. Servicios</h4>
+                    <p class="text-xs text-slate-600 mb-3">Prestaciones inmateriales para satisfacer necesidades colectivas.</p>
+                    <div class="text-xs bg-white p-2.5 rounded-lg border border-slate-200 text-slate-700">
+                        <strong>Ej (Salta):</strong> Servicio de transporte Saeta, hospitales públicos.
+                    </div>
+                </div>
+
+                <!-- Procesos -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+                    <div class="w-9 h-9 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold mb-3">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-900 mb-1">3. Procesos</h4>
+                    <p class="text-xs text-slate-600 mb-3">Secuencias de etapas planificadas para transformar materias primas.</p>
+                    <div class="text-xs bg-white p-2.5 rounded-lg border border-slate-200 text-slate-700">
+                        <strong>Ej (Salta):</strong> Elaboración industrial del vino de altura en Cafayate.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EJE 4 -->
+        <section id="eje4" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-bold uppercase tracking-wider">Eje 4 • Semanas 12 a 14</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-magnifying-glass text-purple-500"></i> Análisis de Objetos Tecnológicos
+            </h2>
+
+            <p class="text-slate-700 text-sm sm:text-base mb-6">
+                Para lograr una mirada experta sobre cualquier objeto cotidiano de nuestra provincia (un mate de alpaca, un poncho, una caja de cartón), utilizamos el <strong>modelo de análisis en 7 dimensiones</strong>:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl"><strong class="text-purple-700">1. Forma:</strong> Aspecto físico y proporciones.</div>
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl"><strong class="text-purple-700">2. Función:</strong> ¿Para qué sirve?</div>
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl"><strong class="text-purple-700">3. Materiales:</strong> ¿De qué está hecho?</div>
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl"><strong class="text-purple-700">4. Partes:</strong> Componentes o piezas.</div>
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl"><strong class="text-purple-700">5. Usuarios:</strong> ¿A quién está destinado?</div>
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl"><strong class="text-purple-700">6. Modo de uso:</strong> Precauciones.</div>
+                <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl sm:col-span-2 lg:col-span-3"><strong class="text-purple-700">7. Impacto:</strong> Consecuencias sociales, culturales y ambientales.</div>
+            </div>
+        </section>
+
+        <!-- EJE 5 -->
+        <section id="eje5" class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-full bg-rose-100 text-rose-800 text-xs font-bold uppercase tracking-wider">Eje 5 • Transversal</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-earth-americas text-rose-500"></i> Tecnología y Contexto Local de Salta
+            </h2>
+
+            <p class="text-slate-700 text-sm sm:text-base mb-6">
+                La provincia de Salta posee cuatro regiones geográficas (Valles, Yungas, Puna y Chaco). Cada una desarrolló soluciones adaptadas a su entorno:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-amber-50/60 border border-amber-200 p-5 rounded-2xl">
+                    <h4 class="font-bold text-amber-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-monument"></i> Tecnologías Ancestrales
+                    </h4>
+                    <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+                        <li>• <strong>Andenes de cultivo:</strong> Optimización de agua en laderas.</li>
+                        <li>• <strong>Construcción con adobe:</strong> Bioclimática para amplitud térmica puneña.</li>
+                        <li>• <strong>Hilado artesanal:</strong> Uso de fibras de camélidos.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50/60 border border-blue-200 p-5 rounded-2xl">
+                    <h4 class="font-bold text-blue-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-solar-panel"></i> Tecnologías de Vanguardia
+                    </h4>
+                    <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+                        <li>• <strong>Parques solares:</strong> Generación limpia en la Puna.</li>
+                        <li>• <strong>Minería de litio:</strong> Extracción de sales en salares puneños.</li>
+                        <li>• <strong>Agroindustria:</strong> Riego tecnificado en el Valle de Lerma.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- AUTOEVALUACION SECTION -->
+        <section id="autoevaluacion" class="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-800 scroll-mt-24">
+            <div class="text-center max-w-xl mx-auto mb-8">
+                <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold uppercase tracking-wider border border-amber-500/30">Cierre Trimestral</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold mt-3 mb-2">Tabla de Autoevaluación de Logros</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Seleccioná cómo te sentís en cada indicador para reflexionar sobre tu aprendizaje.</p>
+            </div>
+
+            <div class="space-y-4 mb-8">
+                <!-- Item 1 -->
+                <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <p class="text-sm text-slate-200">1. Puedo definir con mis palabras qué es la Tecnología sin confundirla solo con celulares.</p>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button onclick="marcarLogro(this, 'logrado')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-emerald-600 hover:text-white transition">Logrado</button>
+                        <button onclick="marcarLogro(this, 'proceso')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-amber-600 hover:text-white transition">En proceso</button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <p class="text-sm text-slate-200">2. Comprendo y diferencio Ciencia, Técnica y Tecnología.</p>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button onclick="marcarLogro(this, 'logrado')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-emerald-600 hover:text-white transition">Logrado</button>
+                        <button onclick="marcarLogro(this, 'proceso')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-amber-600 hover:text-white transition">En proceso</button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <p class="text-sm text-slate-200">3. Identifico necesidades primarias y secundarias con ejemplos de Salta.</p>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button onclick="marcarLogro(this, 'logrado')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-emerald-600 hover:text-white transition">Logrado</button>
+                        <button onclick="marcarLogro(this, 'proceso')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-amber-600 hover:text-white transition">En proceso</button>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <p class="text-sm text-slate-200">4. Reconozco productos tecnológicos en bienes, servicios y procesos.</p>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button onclick="marcarLogro(this, 'logrado')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-emerald-600 hover:text-white transition">Logrado</button>
+                        <button onclick="marcarLogro(this, 'proceso')" class="px-3 py-1.5 rounded-lg bg-slate-700 text-xs font-semibold text-slate-300 hover:bg-amber-600 hover:text-white transition">En proceso</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button onclick="enviarAutoevaluacion()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-bold hover:from-amber-600 hover:to-orange-600 transition shadow-lg shadow-amber-500/20">
+                    <i class="fa-solid fa-paper-plane mr-2"></i> Finalizar y Mostrar Resumen
+                </button>
+                <p id="mensaje-enviado" class="text-xs text-amber-400 mt-3 hidden font-medium">¡Autoevaluación guardada localmente con éxito! Mostrá este resultado a tu docente.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 py-8 text-center text-xs">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p>Cartilla Digital de Educación Tecnológica • Ciclo Básico Común • Provincia de Salta</p>
+            <p class="text-slate-500">Diseñado con enfoque inclusivo (DUA) y optimizado para entornos de baja conectividad.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for interactivity -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Autoevaluacion helper buttons
+        function marcarLogro(btn, estado) {
+            const parent = btn.parentElement;
+            const buttons = parent.querySelectorAll('button');
+            buttons.forEach(b => {
+                b.classList.remove('bg-emerald-600', 'bg-amber-600', 'text-white');
+                b.classList.add('bg-slate-700', 'text-slate-300');
+            });
+            if (estado === 'logrado') {
+                btn.classList.remove('bg-slate-700', 'text-slate-300');
+                btn.classList.add('bg-emerald-600', 'text-white');
+            } else {
+                btn.classList.remove('bg-slate-700', 'text-slate-300');
+                btn.classList.add('bg-amber-600', 'text-white');
+            }
+        }
+
+        function enviarAutoevaluacion() {
+            const msg = document.getElementById('mensaje-enviado');
+            msg.classList.remove('hidden');
+            setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 500);
+        }
+    </script>
+</body>
+</html>
